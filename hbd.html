@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Ucapan Selamat Ulang Tahun</title>
+    <style>
+        body {
+            background-color: #ffe6f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive;
+        }
+        .container {
+            text-align: center;
+        }
+        .rabbit {
+            width: 100px;
+            animation: hop 1s infinite;
+        }
+        .greeting {
+            font-size: 36px;
+            color: #ff6699;
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes hop {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="rabbit.png" alt="Kelinci Imut" class="rabbit">
+        <h1 class="greeting">Selamat Ulang Tahun!</h1>
+    </div>
+</body>
+</html>
